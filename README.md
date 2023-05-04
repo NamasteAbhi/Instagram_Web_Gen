@@ -7,4 +7,4 @@ pip install names
 
 Do Brute For Unlock Accounts
 
-Modify This Tool According For Use
+Modify This Tool According Your Use
