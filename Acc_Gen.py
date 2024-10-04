@@ -1,14 +1,18 @@
+import os
 import random
 import string
 import time
 import names
-import requests
+from curl_cffi import requests as req
 
-proxies =None
+proxies = None
 
+requests=req.Session()
+requests.impersonate='chrome110'
 def get_headers(Country,Language):
     while True:
         try:
+
             an_agent=f'Mozilla/5.0 (Linux; Android {random.randint(9,13)}; {"".join(random.choices(string.ascii_uppercase, k=3))}{random.randint(111,999)}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
 
 
@@ -216,7 +220,6 @@ if __name__ == "__main__":
         else:
             print(a.text)
     else :pass
-
 
 
 
