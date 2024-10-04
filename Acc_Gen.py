@@ -14,8 +14,6 @@ def get_headers(Country,Language):
         try:
 
             an_agent=f'Mozilla/5.0 (Linux; Android {random.randint(9,13)}; {"".join(random.choices(string.ascii_uppercase, k=3))}{random.randint(111,999)}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
-
-
             res = requests.get("https://www.facebook.com/",headers={'user-agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'},proxies=proxies, timeout=30)
             js_datr = res.text.split('["_js_datr","')[1].split('",')[0]
             r=requests.get('https://www.instagram.com/api/v1/web/accounts/login/ajax/',headers={
