@@ -180,7 +180,7 @@ def Create_Acc(Headers,Email,SignUpCode):
 
 
 if __name__ == "__main__":
-    print('Tool Made By @NamasteHacker')
+    print('Tool Made By @NamasteCoder')
 
     headers=get_headers(Country='US',Language='en')   # Enter Your Country With Your Local Language In Short Code
 
